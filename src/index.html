@@ -26,30 +26,37 @@
         <p>11 1234-1234</p>
         <p>11 1234-1234</p>
       </section>
-      <section class="header-main-content page-margin">
-        <figure class="logo"><a href="#">Imagem</a></figure>
-        <nav>
-          <a href="#">Home</a>
-          <div class="dropdown-a">
-            <a href="#">Empresa</a>
-            <div class="dropdown dropdown-content-a">
-              <a href="#">Submenu 1</a>
-              <a href="#">Submenu 1</a>
-              <a href="#">Submenu 1</a>
-              <div class="dropdown-b">
+      <section id="header-container" class="page-margin">
+        <section class="header-main-content">
+          <figure class="logo"><a href="#">Imagem</a></figure>
+          <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <div class="dropdown-a">
+              <a href="#">Empresa</a>
+              <div class="dropdown dropdown-content-a">
                 <a href="#">Submenu 1</a>
-                <div class="dropdown dropdown-content-b">
-                  <a href="#">Submenu 2</a>
-                  <a href="#">Submenu 2</a>
-                  <a href="#">Submenu 2</a>
-                  <a href="#">Submenu 2</a>
+                <a href="#">Submenu 1</a>
+                <a href="#">Submenu 1</a>
+                <div class="dropdown-b">
+                  <a href="#">Submenu 1</a>
+                  <div class="dropdown dropdown-content-b">
+                    <a href="#">Submenu 2</a>
+                    <a href="#">Submenu 2</a>
+                    <a href="#">Submenu 2</a>
+                    <a href="#">Submenu 2</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <a href="#">Clientes</a>
-          <a href="#">Contato</a>
-        </nav>
+            <a href="#">Clientes</a>
+            <a href="#">Contato</a>
+          </nav>
+          <section id="mobile-menu" class="mobile-menu">
+            <div id="menu-line-1" class="menu-line"></div>
+            <div id="menu-line-2" class="menu-line"></div>
+            <div id="menu-line-3" class="menu-line"></div>
+          </section>
+        </section>
       </section>
     </header>
     <main>
@@ -111,5 +118,6 @@
     <script src="./jquery.js"></script>
     <script src="../libs/nivo/jquery.nivo.slider.js"></script>
     <script src="./slider.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

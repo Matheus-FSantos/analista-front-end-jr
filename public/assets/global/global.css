@@ -64,8 +64,6 @@ strong {
 }
 
 li {
-  list-style: none;
-
   &.brightness {
     cursor: pointer;
 

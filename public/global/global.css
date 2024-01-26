@@ -1,11 +1,14 @@
 :root {
-  --blue-750s: #020085;
+  --blue-750: #020085;
 
   --gray-900: #454545;
   --gray-750: #898989;
   --gray-700: #9D9D9D;
   --gray-500: #D1D1D1;
   --gray-400: #C6C6C6;
+  --gray-300: #BDBDBD;
+
+  --white-1000: #F2F2F2;
 }
 
 * {
@@ -34,7 +37,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

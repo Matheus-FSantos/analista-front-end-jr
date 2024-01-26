@@ -61,6 +61,8 @@ header .header-main-content {
   display: flex;
   align-items: end;
   justify-content: space-between;
+
+  width: 100%;
 }
 
 header .header-main-content .logo {
@@ -154,6 +156,10 @@ header .header-main-content nav .dropdown-a .dropdown-content-a a:hover {
 
 header .header-main-content nav a:hover {
   filter: brightness(0.5);
+}
+
+header .header-main-content .mobile-menu {
+  display: none;
 }
 
 main .slider-container {
@@ -315,4 +321,212 @@ footer .footer-container nav a {
 
 footer .footer-container nav a:hover {
   filter: brightness(0.5);
+}
+
+@media only screen and (max-width: 1468px) {
+  .slider-margin {
+    padding-left: 140px; /* 200px */
+    padding-right: 140px; /* 200px */
+  }
+  
+  .page-margin {
+    padding-left: 150px; /* 210px */
+    padding-right: 150px; /* 210px */
+  }
+
+  main .descriptions-container section .texts-container p, main .descriptions-container section .texts-container ul li {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+@media only screen and (max-width: 1290px) {
+  .slider-margin {
+    padding-left: 5.625rem; /* 90px */
+    padding-right: 5.625rem;
+  }
+  
+  .page-margin {
+    padding-left: 6.25rem; /* 100px */
+    padding-right: 6.25rem;
+  }
+
+  main .slider-container {
+    height: 29.375rem; /* 470px */
+  }
+
+  main .descriptions-container .image {
+    width: 374px;
+    height: 244px;
+  }
+
+  main .boxes-container .boxes-grid {
+    grid-column-gap: 2.5rem; /* 40px */
+  }
+
+  main .boxes-container .boxes-grid .box .image {
+    height: 180px;
+  }
+
+  main .boxes-container .boxes-grid .box {
+    height: auto; /* 300px */
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .slider-margin {
+    padding-left: 3.75rem; /* 60px */
+    padding-right: 3.75rem;
+  }
+  
+  .page-margin {
+    padding-left: 4.375rem; /* 70px */
+    padding-right: 4.375rem;
+  }
+
+  h1, h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  main .descriptions-container .image {
+    width: 299px;
+    height: 195px;
+  }
+
+  main .descriptions-container section .texts-container p, main .descriptions-container section .texts-container ul li {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  main .boxes-container .boxes-grid {
+    grid-column-gap: 1.25rem; /* 20px */
+  }
+
+  main .boxes-container .boxes-grid .box .image {
+    height: 130px;
+  }
+
+  main .boxes-container .boxes-grid .box .image span {
+    font-size: 1rem; /* 16px */
+  }  
+
+  main .boxes-container .boxes-grid .box p {
+    font-size: 1rem; /* 18px */
+  } 
+}
+
+@media only screen and (max-width: 830px) {
+  .slider-margin {
+    padding: 0;
+  }
+  
+  .page-margin {
+    padding-left: 1.875rem; /* 30px */
+    padding-right: 1.875rem;
+  }
+}
+
+@media only screen and (max-width: 687px) {
+  .dropdown {
+    width: 100px; /* 190px */
+    
+    gap: 10px; /* 20px */
+    padding: 10px; /* 20px and 50px */
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  header .header-main-content {
+    align-items: center;
+  }
+
+  header .header-full {
+    height: 100vh;
+  }
+
+  header .header-main-content nav {
+    display: none;
+  }
+
+  header .header-full .mobile-nav {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 38%;
+    left: 45%;
+  }
+
+  header .header-full .mobile-nav .dropdown-a .dropdown-content-a a {
+    font-size: 0.8rem;
+  }
+
+  header .header-full .mobile-nav .dropdown-a {
+    position: relative;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+  }
+
+  header .header-full .mobile-nav .dropdown-a .dropdown-content-a {
+    top: 0;
+    left: 120%;
+  }
+
+  header .header-full .mobile-nav .dropdown-a .dropdown-content-a .dropdown-b .dropdown-content-b {
+    left: 120%;
+  }
+
+  header .header-main-content .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header .header-main-content .mobile-menu .menu-line {
+    height: 3.5px;
+    width: 22px;
+    background-color: var(--gray-1000);
+  }
+
+  header .header-main-content .mobile-menu #menu-line-2 {
+    width: 25px;
+  }
+
+  header .header-main-content .active #menu-line-1 {
+    transform: rotate(45deg) translateX(4px) translateY(2px);
+  }
+
+  header .header-main-content .active #menu-line-2 {
+    transform: rotate(-45deg) translateX(4px) translateY(-2px);
+    width: 22px;
+  }
+
+  header .header-main-content .active #menu-line-3 {
+    display: none;
+  }
+  
+  header .header-main-content nav .dropdown-a .dropdown-content-a .dropdown-b .dropdown-content-b {
+    transition-duration: 0ms;
+  }
+
+  header .header-main-content nav .dropdown-a .dropdown-content-a {
+    transition-duration: 0ms;
+  }
+  
+  main .descriptions-container .image {
+    width: 269px;
+    height: 179px;
+  }
+
+  main .descriptions-container section .texts-container p, main .descriptions-container section .texts-container ul li {
+    font-size: 0.75rem; /* 12px */
+    width: 18.75rem; /* 300px */
+  }
+
+  main .boxes-container .boxes-grid .box .image {
+    height: 120px;
+  }
 }

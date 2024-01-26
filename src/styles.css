@@ -209,14 +209,9 @@ main .descriptions-container .image span {
   text-transform: uppercase;
 }
 
-
-
-
-
-
 main .boxes-container {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.875rem; /* 30px */
 
   display: flex;
   flex-direction: column;
@@ -277,4 +272,47 @@ main .boxes-container .boxes-grid .box p {
 main .boxes-container .boxes-grid .box p a {
   color: var(--gray-750);
   text-decoration: underline;
+}
+
+footer {
+  background-color: var(--gray-900);
+}
+
+footer .footer-container {
+  height: 12.5rem; /* 200px */
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4.25rem; /* 68px */
+}
+
+footer .footer-container p {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white-1000);
+}
+
+footer .footer-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.25rem; /* 20px */
+}
+
+footer .footer-container nav a {
+  color: var(--gray-300);
+  filter: brightness(0.8);
+
+  font-weight: 500;
+  font-size: 1.25rem; /* 20px */
+  text-transform: uppercase;
+}
+
+footer .footer-container nav a:hover {
+  filter: brightness(0.5);
 }

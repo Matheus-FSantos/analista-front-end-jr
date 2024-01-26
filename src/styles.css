@@ -6,7 +6,7 @@
 .dropdown {
   visibility: hidden;
 
-  width: 190px;
+  width: 11.875rem; /* 190px */
   
   background-color: var(--blue-750);
   color: var(--white-1000);
@@ -19,8 +19,8 @@
   flex-direction: column;
   justify-content: center;
   
-  gap: 20px;
-  padding: 20px 50px;
+  gap: 1.25rem; /* 20px */
+  padding: 1.25rem 3.125rem; /* 20px and 50px */
 }
 
 header .header-section-numbers {

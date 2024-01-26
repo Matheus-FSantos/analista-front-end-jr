@@ -12,7 +12,7 @@
   color: var(--white-1000);
   
   position: absolute;
-  z-index: 1;
+  z-index: 99;
   
   display: flex;
   align-items: center;
@@ -157,7 +157,24 @@ header .header-main-content nav a:hover {
 
 main .slider-container {
   height: 290px;
-
-
   background-color: var(--gray-500);
+  display: flex;
+  justify-content: center;
+}
+
+main .slider-container #slider {
+  position: relative;
+  width: 894px;
+}
+
+main .slider-container #slider img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .slider-container .slider-content img {
+  object-fit: cover;
 }

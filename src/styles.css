@@ -167,22 +167,12 @@ main .slider-container #slider {
   width: 100%;
 }
 
-
-
-
-
 main .descriptions-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
 
   display: flex;
-  justify-content: space-between
-}
-
-main .descriptions-container h1 {
-  color: var(--gray-750);
-  font-size: 2.25rem; /* 36px */
-  filter: brightness(0.8);
+  justify-content: space-between;
 }
 
 main .descriptions-container section .texts-container {
@@ -217,4 +207,74 @@ main .descriptions-container .image span {
   font-weight: 700;
   color: var(--white-1000);
   text-transform: uppercase;
+}
+
+
+
+
+
+
+main .boxes-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem; /* 30px */
+}
+
+main .boxes-container .boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 3.75rem; /* 60px */
+  grid-row-gap: 0;
+}
+
+main .boxes-container .boxes-grid #box1 { grid-area: 1 / 1 / 2 / 2; }
+main .boxes-container .boxes-grid #box2 { grid-area: 1 / 2 / 2 / 3; }
+main .boxes-container .boxes-grid #box3 { grid-area: 1 / 3 / 2 / 4; }
+main .boxes-container .boxes-grid #box4 { grid-area: 1 / 4 / 2 / 5; }
+
+main .boxes-container .boxes-grid .box {
+  height: 18.75rem; /* 300px */
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.938rem; /* 15px */
+}
+
+main .boxes-container .boxes-grid .box:hover {
+  transform: scale(1.06);
+}
+
+main .boxes-container .boxes-grid .box .image {
+  width: 100%;
+  height: 250px;
+  background-color: var(--blue-750);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .boxes-container .boxes-grid .box .image span {
+  font-size: 1.375rem; /* 22px */
+  font-weight: 700;
+  color: var(--white-1000);
+  text-transform: uppercase;
+}
+
+main .boxes-container .boxes-grid .box p {
+  color: var(--gray-750);
+  filter: brightness(0.8);
+  font-size: 1.125rem; /* 18px */
+  position: relative;
+  left: 0.125rem; /* 2px */
+}
+
+main .boxes-container .boxes-grid .box p a {
+  color: var(--gray-750);
+  text-decoration: underline;
 }

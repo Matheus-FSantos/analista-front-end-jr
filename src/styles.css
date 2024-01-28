@@ -501,7 +501,9 @@ footer .footer-container nav a:hover {
   header .header-main-content .mobile-menu {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.313rem; /* 5px */
+
+		cursor: pointer;
   }
 
   header .header-main-content .mobile-menu .menu-line {

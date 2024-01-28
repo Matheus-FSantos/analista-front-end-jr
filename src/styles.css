@@ -35,10 +35,12 @@
 
 header {
 	position: sticky;
+	
 	top: 0;
 	left: 0;
-	background-color: white;
 	z-index: 98;
+	
+	background-color: var(--white-default);
 }
 
 header .header-section-numbers {

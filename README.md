@@ -2,6 +2,8 @@
 
 Olá! Me chamo Matheus (acho que você já deve saber kkkkkk), e, se você entrou nesse repositório, estou aqui para te apresentar a minha solução referente ao teste ténico para a vaga de Análista Front-End Júnior.
 
+Antes de tudo, segue o link para acessar: [Acesse por aqui](https://matheus-fsantos.github.io/analista-front-end-jr/src/)
+
 #### 🎯 - Project Goal
 
 Nesse teste técnico foi me repassado que **eu tinha por objetivo principal**:

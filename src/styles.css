@@ -33,6 +33,14 @@
   padding: 1.25rem 3.125rem; /* 20px and 50px */
 }
 
+header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 98;
+}
+
 header .header-section-numbers {
   background-color: var(--blue-750);
   
@@ -443,10 +451,6 @@ footer .footer-container nav a:hover {
     
     gap: 10px; /* 20px */
     padding: 10px; /* 20px and 50px */
-  }
-  
-  header {
-    position: relative;
   }
   
   header .header-main-content {
